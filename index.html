@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSSA Developer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="window main-window">
+            <div class="window-header">
+                <span class="window-title">Portfolio - WSSA Developer</span>
+                <div class="window-controls">
+                    <div class="window-control" onclick="showDialog()">?</div>
+                    <div class="window-control">□</div>
+                </div>
+            </div>
+            
+            <div class="window-content">
+                <div class="menu-bar">
+                    <span class="menu-item" onclick="scrollToSection('about')">File</span>
+                    <span class="menu-item" onclick="scrollToSection('projects')">Edit</span>
+                    <span class="menu-item" onclick="scrollToSection('skills')">View</span>
+                    <span class="menu-item" onclick="scrollToSection('contact')">Special</span>
+                </div>
+                
+                <div class="profile-section" id="about">
+                    <div class="profile-pic">
+                        PHOTO
+                    </div>
+                    <div class="profile-info">
+                        <h1>WSSA Developer</h1>
+                        <p>System Programmer & Interface Designer</p>
+                        <p>Specializing in creating efficient software solutions with clean, user-friendly interfaces. Experienced in system-level programming and vintage computing aesthetics.</p>
+                        <div class="button" onclick="downloadResume()">Download Resume.txt</div>
+                    </div>
+                </div>
+                
+                <div class="section" id="projects">
+                    <h2>Current Projects</h2>
+                    <div class="scroll-area">
+                        <div class="project-item">
+                            <h3><span class="folder-icon"></span>RetroOS Interface</h3>
+                            <p>A modern web application built with classic Mac OS aesthetics. Features include window management, file system simulation, and authentic vintage UI components.</p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h3><span class="folder-icon"></span>System Monitor Tool</h3>
+                            <p>Command-line utility for monitoring system resources with a retro terminal interface. Built for efficiency and nostalgia.</p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h3><span class="folder-icon"></span>Pixel Art Editor</h3>
+                            <p>Minimalist pixel art creation tool inspired by early graphics programs. Features grid-based editing and a limited color palette.</p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h3><span class="folder-icon"></span>Text Adventure Engine</h3>
+                            <p>A simple engine for creating text-based adventure games, complete with parser and save/load functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section" id="skills">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <strong>Languages:</strong><br>
+                            C, Assembly, JavaScript, Python
+                        </div>
+                        <div class="skill-item">
+                            <strong>Systems:</strong><br>
+                            Unix, DOS, Classic Mac OS
+                        </div>
+                        <div class="skill-item">
+                            <strong>Web Tech:</strong><br>
+                            HTML, CSS, Vanilla JS
+                        </div>
+                        <div class="skill-item">
+                            <strong>Tools:</strong><br>
+                            Vi, Emacs, ResEdit, HyperCard
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section" id="contact">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <div>
+                            <strong>Email:</strong> john.dev@retromail.com
+                        </div>
+                        <div>
+                            <strong>Phone:</strong> (555) 123-4567
+                        </div>
+                        <div>
+                            <strong>Location:</strong> Puttalam, NWP
+                        </div>
+                        <div>
+                            <strong>Available:</strong> Mon-Fri 9AM-5PM PST
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 16px;">
+                        <div class="button" onclick="openEmail()">Send Mail</div>
+                        <div class="button" onclick="copyContact()">Copy Address</div>
+                        <div class="button" onclick="printPage()">Print Portfolio</div>
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    System 1.0 • © 1984-2025 • <span class="blink">●</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Dialog -->
+        <div class="dialog-box" id="aboutDialog">
+            <div class="dialog-content">
+                <h3>About This Portfolio</h3>
+                <p>This portfolio is designed to mimic the classic Mac OS System 1 interface from 1984. It features authentic UI elements including windows, buttons, and typography reminiscent of early Macintosh computers.</p>
+                <div class="dialog-buttons">
+                    <div class="button" onclick="hideDialog()">OK</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>

@@ -19,15 +19,15 @@
         }
         
         function openEmail() {
-            window.location.href = 'mailto:john.dev@retromail.com?subject=Portfolio Inquiry';
+            window.location.href = 'mailto:ssinindu@gmail.com?subject=Portfolio Inquiry';
         }
         
         function copyContact() {
-            const contactText = 'john.dev@retromail.com';
+            const contactText = 'ssinindu@gmail.com';
             navigator.clipboard.writeText(contactText).then(() => {
                 alert('Email address copied to clipboard!');
             }).catch(() => {
-                alert('Email: john.dev@retromail.com');
+                alert('Email: ssinindu@gmail.com');
             });
         }
         
